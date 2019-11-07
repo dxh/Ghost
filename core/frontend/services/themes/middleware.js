@@ -80,7 +80,8 @@ function updateGlobalTemplateOptions(req, res, next) {
 
     const themeData = {
         posts_per_page: activeTheme.get().config('posts_per_page'),
-        image_sizes: activeTheme.get().config('image_sizes')
+        image_sizes: activeTheme.get().config('image_sizes'),
+        theme: activeTheme.get().config('theme')
     };
     const priceData = haxGetMembersPriceData();
 
